@@ -1,0 +1,99 @@
+/* tablet */
+
+@media (min-width: 740px) and (max-width:1023px) {
+    #about,
+    #tour,
+    #contact {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .tour__item {
+        width: 230px;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    #header {
+        overflow: hidden;
+    }
+    .nav {
+        display: block;
+    }
+    .nav__item {
+        display: block;
+    }
+    .nav__item:first-child {
+        display: inline-block;
+    }
+    .nav__item-link {
+        padding: 0 27px 0 27px;
+    }
+    .subnav {
+        position: initial;
+        padding-left: 0;
+        background-color: #000;
+    }
+    .subnav__item-link {
+        color: #fff;
+        padding: 0 47px;
+    }
+    .header__search {
+        display: none;
+    }
+    .header__mobile-menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #about,
+    #tour,
+    #contact {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .text-info {
+        display: none;
+    }
+    .about__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__item {
+        width: 237px;
+    }
+    .tour__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: -15px;
+    }
+    .tour__item {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .contact__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact__form {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .subrollin {
+        display: none;
+        max-height: 0;
+        -webkit-transition: all ease-in 0.3s;
+    }
+    .subrollout {
+        display: block;
+        max-height: 200px;
+        -webkit-transition: all ease-out 0.3s;
+    }
+}
